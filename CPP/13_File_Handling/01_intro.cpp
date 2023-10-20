@@ -1,44 +1,30 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <fstream>
+#include <string>
 using namespace std;
 
 
 int main(){
-    //to write
-    /*
-    ofstream onFile;
-    onFile.open("file.txt");
-    onFile << "Printed in file";
-    cout << "File updated" << endl;
-    onFile.close();
-    
-    //to read
+    // ofstream onFile;
     ifstream inFile;
     string str;
+
+    // onFile.open("file.txt");
+    // onFile.open("C:\\Users\\adhir\\Desktop\\test.txt");
     inFile.open("file.txt");
-    //inFile >> str;
-    //this will only take input upto first space
-    while(getline(inFile, str)) cout << str << endl;
-    */
 
-   /*
-    //to take input from user of name and save it in a file
-    string s[5];
-    for(int i = 0; i < 5; i++) cin >> s[i];
-    ofstream onFile;
-    onFile.open("Name.txt");
-    for(auto e : s) onFile << e << endl;
-    onFile.close();
-    cout << endl;
-    cout << "File updated" << endl;
-    cout << endl;
+    //to write
+    // onFile << "Printed in file";
 
-    ifstream inFile;
-    inFile.open("Name.txt");
-    string str;
-    while(inFile >> str) cout << str << endl;
-    */
+    //to read
+    // inFile >> str;
+    // cout << str; 
 
-    
+    while(getline(inFile,str)){
+        cout << str;
+    }
 
-    return 0; 
+    // cout << "File updated" << endl;
+
+    inFile.close();
 }

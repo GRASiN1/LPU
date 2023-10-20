@@ -1,18 +1,23 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <fstream>
+#include <string>
 using namespace std;
+
 int main(){
-    
-    ofstream newFile;
-    ifstream oldFile;
-    oldFile.open("Name.txt");
-    newFile.open("NewName.txt");
-    string str;
-    while(oldFile >> str) newFile << str << endl;
-    newFile.close();
-    oldFile.close();
-    cout << "File Copied" << endl;
 
-    //remove(<filename>) to remove a file;
+    ifstream inFile;
+    ofstream onFile;
 
-    return 0;
+    char ch;
+
+    inFile.open("file.txt");
+    onFile.open("newFile.txt");
+
+    while(inFile.get(ch)){
+        onFile.put(ch);
+    }
+
+    inFile.close();
+    onFile.close();
+
 }
