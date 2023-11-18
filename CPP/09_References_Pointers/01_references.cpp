@@ -21,24 +21,24 @@ int main(){
     cin >> n;
 
     test2(n);
-    // test(n);
+    test(n);
 
-    // cout << "value of n from main method is : " << n << endl;
+    cout << "value of n from main method is : " << n << endl;
 
-    // string name = "Hello";
-    // string &ref = name;
+    string name = "Hello";
+    string &ref = name;
 
-    // cout << name << endl;
-    // cout << ref << endl;
+    cout << name << endl;
+    cout << ref << endl;
 
-    // int a = 5;
+    int a = 5;
 
-    // int &b = a;
+    int &b = a;
 
-    // cout << a << endl;
-    // a++;
-    // cout << a << endl;
-    // b++;
-    // cout << a << endl;
+    cout << a << endl;
+    a++;
+    cout << a << endl;
+    b++;
+    cout << a << endl;
 
 }

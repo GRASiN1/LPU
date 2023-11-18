@@ -43,12 +43,24 @@ void bfs(unordered_map<int, set<int>> &adjList,unordered_map<int,
     
 }
 
+void printAdjList(unordered_map<int, set<int>> adj){
+    for(auto i:adj){
+        cout << i.first << "-> ";
+        for(auto j:i.second){
+            cout << j << ", ";
+        }
+        cout << endl;
+    }
+}
+
 vector<int> bfsTraversal(int n, vector<vector<int>> &adj){
     unordered_map<int, set<int>> adjList;
     vector<int> ans;
     unordered_map<int, bool> visited;
 
     prepareAdjList(adjList, adj);
+
+    printAdjList(adjList);
 
     for(int i = 0; i < n; i++){
         if(!visited[i]){
